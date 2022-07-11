@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css">
     <script src="/main.js" defer></script>
     <title>Take3</title>
@@ -14,9 +22,9 @@
 
       <div class="right">
         <div class="form-container">
-          <div class="form-heading">
-            <h1>Register</h1>
-            <h2>Manager</h2>
+          <div class="form-header">
+            <h1>Become a magic conch member today!</h1>
+            <h2>Do nothing. Forever. </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus error delectus dolore recusandae, commodi doloribus itaque libero provident. Ad, consectetur?</p>
           </div>
 
@@ -25,44 +33,49 @@
                 <div class="input-control">
                   <div class="form-control">
                     <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="first_name" placeholder="First Name">
+                    <div class="input-components">
+                      <input type="text" class="input-field" id="firstname" name="first_name" >
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-circle-exclamation"></i>
+                    </div>
                     <small>Error Message!</small>
                   </div>
                   <div class="form-control">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last_name" placeholder="Last Name">
+                    <input type="text" class="input-field" id="last-name" name="last_name">
                     <small>Error Message!</small>
                   </div>
                   <div class="form-control">
                     <label for="phone-number">Phone Number</label>
-                    <input type="text" id="phone-number" name="phone#" placeholder="Phone Number">
+                    <input type="text" class="input-field" id="phone-number" name="phone#">
                     <small>Error Message!</small>
                   </div>
                   <div class="form-control">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="email" class="input-field" id="email" name="email">
                     <small>Error Message!</small>
                   </div>
                   <div class="form-control">
                     <label for="password">Password</label>
-                    <input type="text" id="password" name="password" placeholder="Password">
+                    <input type="text" class="input-field" id="password" name="password">
                     <small>Error Message!</small>
                   </div>
                   <div class="form-control">
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="text" id="confirm-password" name="confirm_password" placeholder="Confirm Password">
+                    <input type="text" class="input-field" id="confirm-password" name="confirm_password">
                     <small>Error Message!</small>
                   </div>
                 </div>
 
-                <div class="form-control checkbox">
-                  <input type="checkbox" id="email-yo" name="first_name" checked>
-                  <label for="email-yo">Yes, I want to recieve spam mail I intend on never opening!</label>
-                </div>
-
-                <div class="form-control checkbox">
-                  <input type="checkbox" id="terms-yo" name="terms">
-                  <label for="term-yo">I agree to all <a href="#">Terms, Privacy and Feews</a></label>
+                <div class="checkbox-control">
+                  <div class="form-control">
+                    <input type="checkbox" id="email-yo" name="first_name" checked>
+                    <label for="email-yo">Yes, I want to recieve spam mail I intend on never opening!</label>
+                  </div>
+                  <div class="form-control">
+                    <input type="checkbox" id="terms-yo" name="terms">
+                    <label for="term-yo">I agree to all <a href="#">Terms, Privacy and Fees</a></label>
+                  </div>
                 </div>
 
                 <div class="form-control">
@@ -72,7 +85,7 @@
     
             </form>
 
-            <footer>Already have an account? <a href="#">Log In</a></footer>
+            <footer class="form-footer">Already have an account? <a href="#">Log In</a></footer>
 
           <!-- </div> -->
         </div>

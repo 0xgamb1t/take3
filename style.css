@@ -1,75 +1,123 @@
+
+*{
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
 .web-container {
   display: grid;
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: 2fr 9fr;
 
-  background-color: whitesmoke;
-  height: 600px;
+  /* background-color: whitesmoke; */
+  height: 700px;
 }
 
 .left{
-  background-color: blueviolet;
+  background-color: rgba(59, 41, 255, 0.601);
 }
 
 .right {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   display: grid;
   align-content: center;
   justify-content: center;
 }
 .form-container {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   max-width: 800px;
   padding: 8px;
 
 }
 
-.form-heading h1, h2, p{
-  color: blueviolet;
-  max-width: 850px;
+.form-header h1, h2, p{
+  color: rgb(19, 1, 80);
+  max-width: 680px;
 }
 
-.form-heading p {
-  font-size: .85rem;
+.form-header h1 {
+  font-size: 25px;
+}
+
+.form-header h2 {
+  font-size: 1.15rem;
+}
+
+.form-header p, .form-footer, .checkbox-control {
+  font-size: .9rem;
+  color: rgba(46, 46, 46, 0.536);
+}
+
+.form-header {
+  border-bottom: 2px solid rgba(152, 152, 152, 0.527);
+  margin-bottom: 25px;
 }
 
 .form{
   display: grid;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .input-control {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: gray;
+  /* background-color: gray; */
   justify-content: left;
+  max-width: 600px;
 }
 
 .input-control > .form-control {
+  padding-bottom: 12px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  max-width: 365px;
 }
 
 .form-control {
   display: grid;
+  padding-bottom: 18px;
 
 }
 
-.form-control.checkbox {
+.form-control i {
+  visibility: hidden;
+}
+
+.checkbox-control {
+  font-size: .9rem;
+  padding-top: 15px;
+}
+
+.checkbox-control > .form-control {
   grid-auto-flow: column;
   justify-content: left;
 }
 
-input {
-  line-height: 35px;
+.input-field {
+  line-height: 32px;
   border-radius: 4px;
+  max-width: 300px;
+}
+
+.input-control label {
+  font-size: .8rem;
+  font-weight: medium;
+  padding-bottom: 6px;
+}
+
+.form-control small {
+  font-size: .8rem;
+  color: rgb(219, 0, 0);
+  visibility: hidden;
 }
 
 .create-account {
   justify-self: left;
   height: 35px;
   width: 150px;
+  margin-top: 20px;
 }
 
 
 .form-footer{
+  font-weight: bold;
+  padding-top: 10px;
 }
