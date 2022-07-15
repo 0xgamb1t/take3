@@ -13,8 +13,21 @@
 }
 
 .left{
-  background-color: rgba(59, 41, 255, 0.601);
+  background-image: var(--gradient);
+  animation: bg-animation 5s infinite alternate;
+  background-size: 400%;
 }
+
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 
 .right {
   /* background-color: whitesmoke; */
@@ -30,7 +43,7 @@
 }
 
 .form-header h1, h2, p{
-  color: rgb(19, 1, 80);
+  color: #000000;
   max-width: 680px;
 }
 
@@ -54,6 +67,7 @@
 
 .form{
   display: grid;
+  color: rgb(0, 0, 0)
   /* background-color: blueviolet; */
 }
 
@@ -74,7 +88,6 @@
 .form-control {
   display: grid;
   padding-bottom: 18px;
-
 }
 
 .form-control i {
@@ -95,6 +108,8 @@
   line-height: 32px;
   border-radius: 4px;
   max-width: 300px;
+  border-color: grey;
+
 }
 
 .input-control label {
@@ -109,11 +124,32 @@
   visibility: hidden;
 }
 
-.create-account {
+.create-account-btn {
   justify-self: left;
   height: 35px;
   width: 150px;
   margin-top: 20px;
+  border: 0;
+  border-radius: .2rem;
+  background: #1e88e5;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.2;
+
+  cursor: pointer;
+  
+}
+
+:root {
+  --gradient: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
 }
 
 
@@ -121,3 +157,17 @@
   font-weight: bold;
   padding-top: 10px;
 }
+
+.form-control.success input{
+  border-color: #2ecc71;
+}
+
+.form-control.error input{
+  border-color: #e74c3c;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
